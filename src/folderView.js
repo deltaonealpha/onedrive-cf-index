@@ -49,10 +49,10 @@ export async function renderFolderView(items, path, request) {
         (fileName === '..' ? '' : el('span', ['class="size"'], readableFileSize(size)))
     )
 
-  const intro = `<div class="intro markdown-body" style="text-align: left; margin-top: 2rem;">
+  const intro = `<div class="intro markdown-body" style="text-align: left; margin-top: 2rem;color:#ffffff;">
                     <h2>deltaserverstorage 👋</h2>
                     <p>This is deltaonealpha's public directory listing. Feel free to download any files that you find useful.</p>
-                    <p><a href="https://t.me/deltaonealpha">Telegram</a> · <a href="https://github.com/deltaonealpha">GitHub</a></p>
+                    <p><a style="color:#AF1E2D;" href="https://t.me/deltaonealpha">Telegram</a> · <a style="color:#AF1E2D;" href="https://github.com/deltaonealpha">GitHub</a></p>
                   </div>`
 
   // Check if current directory contains README.md, if true, then render spinner
